@@ -11,7 +11,6 @@ export const TodosModule = () => {
 			</Card.Content>
 			<Card.Footer>
 				<h4>Типа панель</h4>
-				<Checkbox/>
 			</Card.Footer>
 		</Card>
 	);
