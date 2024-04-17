@@ -1,0 +1,9 @@
+@import "normalize";
+@import "fonts";
+@import "vars";
+html{
+  height: 100vh;
+}
+body,#root,.app, .app>div{
+  height: 100%;
+}
