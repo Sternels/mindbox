@@ -1,15 +1,11 @@
-import { FC } from "react"
+import { TodosModule } from "components";
 
-interface HomePageProps {
-    className?: string
-}
-
-const HomePage:FC<HomePageProps> = ({className = ""}) => {
-  return (
-    <>
-
-    </>
-  )
-}
+const HomePage = () => {
+	return (
+		<>
+			<TodosModule />
+		</>
+	);
+};
 
 export default HomePage;
