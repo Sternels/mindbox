@@ -1,11 +1,15 @@
 @import "normalize";
 @import "fonts";
 @import "vars";
-html{
-  height: 100vh;
+html {
+	height: 100vh;
 }
-body,#root,.app, .app>div{
-  height: 100%;
-  background-color: $background-color;
+body,
+#root,
+.app,
+.app > div {
+	height: 100%;
+	background-color: $background-color;
 	font-family: montserrat;
+	font-weight: 300;
 }
