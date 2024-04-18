@@ -1,12 +1,12 @@
-import { Card, Input } from "components/ui";
+import { Card } from "components/ui";
 import { TodosList } from "./list";
-import { Checkbox } from "components/ui/checkbox";
+import { TodosInput } from "./input";
 
 export const TodosModule = () => {
 	return (
 		<Card maxWidth={400}>
 			<Card.Content>
-				<Input placeholder="What needs to be done?"/>
+				<TodosInput />
 				<TodosList />
 			</Card.Content>
 			<Card.Footer>
