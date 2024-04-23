@@ -4,11 +4,12 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: "/todos/",
+  base: "/todos",
   plugins: [react(), tsconfigPaths()],
-  // server: {
-  //   host: true
-  // },
+  server: {
+    host: "0.0.0.0",
+    port: 3000
+  },
 
   css: {
     preprocessorOptions: {
