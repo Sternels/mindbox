@@ -1,7 +1,8 @@
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
+import todosReducer from "./reducers/todos-slice";
 
 const rootReducer = combineReducers({
-    
+    todosReducer
 })
 
 export const setupStore = () => {

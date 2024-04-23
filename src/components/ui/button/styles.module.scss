@@ -1,0 +1,13 @@
+.button{
+    background: transparent;
+    border: 1px solid transparent;
+    color: $text-primary-color;
+    padding: $padding - 5;
+    transition: all 0.1s;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    &:hover {
+        border: 1px solid $primary-color;
+    }
+}
