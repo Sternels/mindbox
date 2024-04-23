@@ -8,7 +8,7 @@ export const Routing = () => {
 	return (
 		<Routes>
 			<Route element={<MainLayout />}>
-				<Route path="/" element={<HomePage />} />
+				<Route path="/todos" element={<HomePage />} />
 			</Route>
 		</Routes>
 	);
