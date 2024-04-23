@@ -16,7 +16,7 @@ export const TodosList = () => {
 		const { getData } = useLocalStorage("todos");
 		const todos = getData();
 		dispatch(Todo.todoSlice.actions.getTodos(todos));
-	}, []);
+	}, [dispatch]);
 
 	return (
 		<div className={styles.todos__box_todo}>

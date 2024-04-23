@@ -9,7 +9,7 @@ import styles from './styles.module.scss'
 export interface ITodosPanelProps {
 }
 
-export const TodosPanel:FC<ITodosPanelProps> = ({}) => {
+export const TodosPanel:FC<ITodosPanelProps> = () => {
     const dispatch = useAppDispatch()
 
 	const { count } = useAppSelector((state) => state.todosReducer);

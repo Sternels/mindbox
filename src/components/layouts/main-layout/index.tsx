@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 import styles from "./styles.module.scss";
 
-export const MainLayout = () => {
+const MainLayout = () => {
 	return (
 		<div className={styles.main_layout}>
 			<Header />
@@ -11,3 +11,5 @@ export const MainLayout = () => {
 		</div>
 	);
 };
+
+export default MainLayout;

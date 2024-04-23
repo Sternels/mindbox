@@ -7,7 +7,7 @@ import styles from "./styles.module.scss";
 
 export interface ITodosInputProps {}
 
-export const TodosInput: FC<ITodosInputProps> = ({}) => {
+export const TodosInput: FC<ITodosInputProps> = () => {
 	const [value, setValue] = useState<string>("");
 	const dispatch = useAppDispatch();
 
