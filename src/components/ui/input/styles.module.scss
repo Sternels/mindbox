@@ -1,0 +1,52 @@
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie);
+}
+
+$transition: all 0.3s ease;
+@mixin transition($value) {
+	-webkit-transition: $value;
+	-moz-transition: $value;
+	-ms-transition: $value;
+	-o-transition: $value;
+	transition: $value;
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
+
+.input {
+	box-sizing: border-box;
+	padding: $padding;
+	text-overflow: ellipsis;
+	width: 100%;
+	border: 0;
+	color: $text-primary-color;
+
+	@include placeholder {
+		color: $text-secondary-color;
+		transition: $transition;
+		font-style: italic;
+		@include opacity(1);
+	}
+	&:focus {
+		outline: none;
+		@include placeholder {
+			@include opacity(0);
+			transition: $transition;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.todos__input_container {
+	display: flex;
+	align-items: center;
+    margin: $margin;
+    padding: $padding;
+    position: relative;
+
+	.todos__input_container_btn {
+		width: 30px;
+		height: 15px;
+
+        &::after {
+            position: absolute;
+			content: "";
+            cursor: pointer;
+			width: 8px;
+			height: 8px;
+			border: solid $text-secondary-color;
+			border-width: 0 2px 2px 0;
+			transform: rotate(45deg);
+		}
+	}
+}
