@@ -36,13 +36,13 @@
 	}
 
 	&:hover input[type=checkbox] ~ .checkbox__container {
-		background-color: #f3f3f3;
+		background-color: #f8f8f8;
 	}
 
 	input[type=checkbox]:checked ~ .checkbox__container {
 		border: 1px solid $text-primary-color;
         transition: all 1s;
-        background-color: #f3f3f3;
+        // background-color: #f3f3f3;
         text-decoration: line-through;
 	    text-decoration-color: $text-primary-color;
 

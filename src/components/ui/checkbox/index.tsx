@@ -11,7 +11,7 @@ export const Checkbox: FC<CheckboxProps> = React.memo(
 		return (
 			<>
 				<label className={styles.checkbox}>
-					<input {...restProps} type="checkbox" checked={status} />
+					<input {...restProps} type="checkbox" defaultChecked={status} />
 					<span className={styles.checkbox__text}>{title}</span>
 					<span className={styles.checkbox__container}></span>
 				</label>

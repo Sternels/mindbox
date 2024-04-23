@@ -4,12 +4,3 @@
     justify-content: center;
     gap: 5px;
 }
-
-.btn_active {
-    border: 1px solid $primary-color;
-
-    &:hover {
-        background: $primary-color;
-        color: $white-color;
-    }
-}

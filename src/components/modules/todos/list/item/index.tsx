@@ -1,15 +1,27 @@
+import { useAppDispatch } from "app/store/hook";
+import { Todo } from "app/store/reducers";
 import { Checkbox } from "components/ui/checkbox";
-import { Todo } from "models";
+import { ITodo } from "models";
 import { FC } from "react";
 
 export interface ITodosItemListProps {
-    item: Todo
+	item: ITodo;
 }
 
-export const TodosItemList: FC<ITodosItemListProps> = ({item}) => {
+export const TodosItemList: FC<ITodosItemListProps> = ({ item }) => {
+    const dispatch = useAppDispatch()
+
+	const handlerChangedStatus = () => {
+        dispatch(Todo.todoSlice.actions.changeStatusTodo(item))
+    };
+
 	return (
-        <div>
-            <Checkbox title={item.title} status={item.status}/>
-        </div>
-    );
+		<div>
+			<Checkbox
+				onChange={handlerChangedStatus}
+				title={item.title}
+				status={item.status}
+			/>
+		</div>
+	);
 };
